@@ -1,6 +1,7 @@
 from .whisperx_api import WhisperXTranscriber
 import argparse
 import os
+import subprocess  # For running m2.py
 
 DEFAULT_AUDIO_DIR = "audio"
 SUPPORTED_EXTENSIONS = ('.mp3', '.wav', '.ogg', '.flac', '.m4a', '.aac')
@@ -40,6 +41,9 @@ def cli():
         )
     
     transcriber.cleanup()
+
+    # ✅ Run m2.py after transcription is complete
+    subprocess.run(["python", "/teamspace/studios/this_studio/latexGen.py"])
 
 if __name__ == "__main__":
     cli()
