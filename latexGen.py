@@ -143,7 +143,7 @@ def main():
 
     # Save LaTeX to specified path
     try:
-        output_path = "/teamspace/studios/this_studio/Latex/mom.tex"
+        output_path = "/teamspace/studios/this_studio/whisperX/Latex/mom.tex"
         with open(output_path, "w") as f:
             f.write(latex_code)
         print(f"\nLaTeX saved successfully to {output_path}")
