@@ -43,7 +43,7 @@ def cli():
     transcriber.cleanup()
 
     # ✅ Run m2.py after transcription is complete
-    subprocess.run(["python", "/teamspace/studios/this_studio/latexGen.py"])
+    subprocess.run(["python", "/teamspace/studios/this_studio/whisperx/latexGen.py"])
 
 if __name__ == "__main__":
     cli()
