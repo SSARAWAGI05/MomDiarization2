@@ -4,7 +4,7 @@ from numpy.linalg import norm
 from numpy import dot
 from groq import Groq
 
-client = Groq(api_key=)#Put api_key = "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"
+client = Groq(api_key="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")
 
 def remove_think_tags(text):
     return re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL).strip()
